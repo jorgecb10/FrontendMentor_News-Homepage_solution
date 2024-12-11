@@ -1,0 +1,109 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.principal {
+    margin-top: 4rem;
+
+    @include m.tablet { 
+        @include m.grid(4, 2rem)
+    }
+
+    &__contenido {
+        @include m.tablet {
+            grid-column: 1 / 4;
+        }
+
+        @include m.desktop {  
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+
+    &__info {
+        margin-top: 2rem;
+        @include m.tablet {  
+            @include m.grid(2, 10rem);
+        }
+    }
+
+    &__heading {
+        font-family: v.$font-inter-bold;
+        @include m.tablet {      
+            font-size: 4.5rem;
+        }
+    }
+
+    &__texto {
+        @include m.tablet { 
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 3rem;
+        }
+    }
+
+    &__parrafo {
+        margin: 2rem 0 4rem 0;
+        line-height: 1.5;
+        color: v.$darkGrayishBlue;
+        @include m.tablet {  
+            margin: 0;
+        }
+    }
+
+    &__read-more {
+        padding: 1rem 3rem;
+        background-color: v.$SoftBlue;
+        color: v.$veryDarkBlue;
+        letter-spacing: .3rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        transition: color 0.2s ease,
+                    background-color .2s ease;
+
+        &:hover {
+            cursor: pointer;
+            color: v.$offWhite;
+            background-color: v.$veryDarkBlue;
+        }
+    }
+} 
+
+.aside {
+    margin-top: 6rem;
+    background-color: v.$veryDarkBlue;
+    padding: 2rem;
+    @include m.tablet { 
+        margin-top: 0;
+    }
+
+    &__heading {
+        color: v.$softOrange;
+    }
+
+    &__caja {
+        margin-top: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: .2rem solid v.$darkGrayishBlue;
+        &:nth-child(4) {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        &-heading {
+            color: v.$offWhite;
+            transition: color 0.2s ease;
+
+            &:hover {
+                cursor: pointer;
+                color: v.$softOrange;
+            }
+        }
+
+        &-texto {
+            color: v.$grayishBlue;
+            margin: 2rem 0 0 0;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@use 'base/variables' as v; 
+
+.footer {
+    margin-top: 6rem;
+    text-align: center;
+    color: v.$veryDarkBlue;
+
+    &__enlace {
+        color: v.$veryDarkBlue;
+        font-family: v.$font-inter-bold;
+        transition: color 0.2s ease;
+
+        &:hover {
+            cursor: pointer;
+            color: v.$SoftBlue;
+        }
+    }
+}

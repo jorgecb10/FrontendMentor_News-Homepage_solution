@@ -1,0 +1,28 @@
+{
+  "name": "news-homepage-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "cssnano": "^7.0.6",
+    "gulp": "4.0.2",
+    "gulp-imagemin": "7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^6.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-webp": "^4.0.1",
+    "sass": "^1.82.0"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%"
+  ]
+}
