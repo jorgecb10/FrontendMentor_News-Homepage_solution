@@ -7,7 +7,7 @@
     "dev": "gulp"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jorge Carranza",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.20",
